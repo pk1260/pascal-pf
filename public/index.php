@@ -40,6 +40,7 @@ require '../private/includes/AltoRouter.php';
  * Verder willen we nog wat andere zaken instellen en goed zetten
  * Dit staat in het bestand private/includes/init.php
  */
+
 $CONFIG = require '../private/includes/config.php';
 require '../private/includes/init.php';
 $router = new AltoRouter();
@@ -50,9 +51,9 @@ $router->setBasePath($CONFIG['BASE_URL']);
  * Hier stellen we de juiste "routes" in voor onze website
  * We vertellen de router welke url naar welk stukje code (de controller) moet worden doorgestuuurd.
  */
-$router->map( 'GET', '/home',       'HomeController#homepage',              'home' );
-$router->map( 'GET', '/portfolio',  'PortfolioControllerr#portfoliopage',   'portfolio' );
-$router->map( 'GET', '/project',    'ProjectControllerr#projectpage',       'project' );
+$router->map( 'GET', '/',           'HomeController#homepage',              'home' );
+$router->map( 'GET', '/portfolio',  'PortfolioController#portfoliopage',    'portfolio' );
+$router->map( 'GET', '/project',    'ProjectController#projectpage',        'project' );
 $router->map( 'GET', '/blog',       'BlogController#blogpage',              'blog' );
 $router->map( 'GET', '/contact',    'ContactController#contactpage',        'contact' );
 $router->map( 'GET', '/notfound',   'NotFoundController#notfound',          '404 page not found' );
