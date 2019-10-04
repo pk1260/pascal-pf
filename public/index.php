@@ -35,6 +35,7 @@
  *
  */
 require '../private/includes/AltoRouter.php';
+
 /**
  * Verder willen we nog wat andere zaken instellen en goed zetten
  * Dit staat in het bestand private/includes/init.php
@@ -49,13 +50,12 @@ $router->setBasePath($CONFIG['BASE_URL']);
  * Hier stellen we de juiste "routes" in voor onze website
  * We vertellen de router welke url naar welk stukje code (de controller) moet worden doorgestuuurd.
  */
+$router->map( 'GET', '/home', 'HomeController#homepage', 'home' );
+$router->map( 'GET', '/notfound', 'NotFoundController#notfound', 'notfound' );
 
-$router->map('GET', '/home', 'HomeController#homepage', 'home');
-$router->map('GET', '/notfound', 'NotFoundController#notfound', 'notfound');
-
-$router->map('GET', '/voorbeeld', function () {
+$router->map( 'GET', '/voorbeeld', function () {
     echo 'Zo kun je ook een route afhandelen door een inline functie te gebruiken, maar dat wordt al snel rommelig (deze mag je dus weer weghalen of laten staan als voorbeeld';
-});
+} );
 // Daarna vragen we $router of de huidige URL getmatcht kan worden.
 $match = $router->match();
 /**
@@ -63,23 +63,23 @@ $match = $router->match();
  * Je krijgt namelijk alle info terug in de $match variabele die je nodig hebt om de juiste code aan te roepen
  * Lees in de documentatie hoe je dit allemaal kunt doen met AltoRouter
  */
-if (is_array($match) && is_callable($match['target'])) {
+if ( is_array( $match ) && is_callable( $match['target'] ) ) {
     //Als het een inline function is roepen we deze meteen aan
-    call_user_func_array($match['target'], $match['params']);
-} else if ($match !== false) {
+    call_user_func_array( $match['target'], $match['params'] );
+} else if ( $match !== false ) {
     //Anders hakken we de controller#method doormidden op het "#" teken en zetten we ze in twee variabelen
-    list($controller_name, $method) = explode('#', $match['target']);
+    list( $controller_name, $method ) = explode( '#', $match['target'] );
     try {
         // We maken een nieuwe "instance" aan van de juiste controller class
         $controller = new $controller_name;
         // We roepen we juiste method aan in de controller class
-        call_user_func_array([$controller, $method], $match['params']);
-    } catch (\Exception $e) {
+        call_user_func_array( [ $controller, $method ], $match['params'] );
+    } catch ( \Exception $e ) {
         echo $e->getMessage();
         exit;
     }
 } else {
     // Er is geen match dus een 404 pagina
-    header($_SERVER["SERVER_PROTOCOL"] . ' 404 Not Found');
+    header( $_SERVER["SERVER_PROTOCOL"] . ' 404 Not Found' );
     echo '404: Onbekende pagina';
 }
