@@ -27,7 +27,7 @@
                 <li><a href="">blog</a></li>
                 <li><a href="">contact</a></li>
             </ul>
-            <a onclick="openNav()" class="menu" href="">menu</a>
+            <a onclick="openNav()" class="menu">menu</a>
         </nav>
     </header>
     <div id="mobile__menu" class="overlay">
@@ -38,6 +38,4 @@
             <a href="">contact</a>
         </div>
     </div>
-    <script type="text/javascript" src="js/mobile-nav.js"></script>
-</body>
-</html>
+
