@@ -1,0 +1,35 @@
+# Dit bestand zorgt ervoor dat de website ALLE requests doorstuurt naar de front controller
+# Zo handelen we alles op één plek af.
+#
+# Met uitzondering van bestanden die wel echt bestaan
+
+# This file redirects all website requests to the front controller
+# So we can handle everything at 1 place
+#
+# With exception to files that due exist
+
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+
+  # skip existent files
+  RewriteCond %{REQUEST_FILENAME} -f
+  RewriteRule index.php - [QSA,L,C]
+  RewriteRule .* - [QSA,L]
+
+  # deny access php files
+  RewriteCond %{REQUEST_URI} ^.*\.php$
+  RewriteRule ^.*\.php$ - [R=404,L]
+
+  # redirect root access (/) to index.php
+  RewriteCond %{REQUEST_URI} ^/$
+  RewriteRule ^$ index.php [QSA,L]
+
+  # redirect 404 for non existent files
+  RewriteCond %{REQUEST_URI} ^(.*)\..*$
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteRule ^(.*)\..*$ - [R=404,L]
+
+  # no, so we redirect to our front web controller
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteRule ^(.*)$ index.php [QSA,L]
+</IfModule>
