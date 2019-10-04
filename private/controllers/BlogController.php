@@ -3,11 +3,11 @@
  * Created by PhpStorm.
  * User: pascalkuiper
  * Date: 2019-10-04
- * Time: 10:58
+ * Time: 11:23
  */
 
-class HomeController {
-    function homepage(){
+class BlogController {
+    function blogpage(){
         include __DIR__ . '/../views/';
         include __DIR__ . '/../views/';
         include __DIR__ . '/../views/';
