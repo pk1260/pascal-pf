@@ -9,7 +9,7 @@
 class HomeController {
     function homepage(){
         include __DIR__ . '/../views/header.php';
-        include __DIR__ . '/../views/';
+        include __DIR__ . '/../views/landpage.php';
         include __DIR__ . '/../views/footer.php';
     }
 }

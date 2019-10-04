@@ -4,18 +4,25 @@
     --main-black:   #000000;
     --main-blue:    #2ABDFF;
     --main-white:   #ffffff;
+    --main-grey:    #EBEBEB;
+    --trans-black:  rgba(0, 0, 0, .9)
+}
+/*TEKST SETUP*/
+h1, h2, h3, h4, h5, h6, p, a {
+    font-family: Roboto, sans-serif;
 }
 /*DESKTOP NAVIGATION SECTION*/
-
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    /*background-color: var(--main-black);*/
+}
+body {
+    background: url("../img/fujisan-2560x1440p.jpg") center no-repeat;
+    background-size: cover;
 }
 
 li, a {
-    font-family: Roboto, sans-serif;
     text-transform: uppercase;
     font-weight: 400;
     font-size: 16px;
@@ -86,7 +93,7 @@ h1:hover, span:hover {
     z-index: 1;
     left: 0;
     top: 0;
-    background-color: var(--main-black);
+    background-color: var(--trans-black);
     overflow-x: hidden;
     transition: all .5s ease 0s;
 }
@@ -113,18 +120,6 @@ h1:hover, span:hover {
 .overlay .close {
     position: absolute;
     top: 20px;
-    right: 45px;
+    right: 15px;
     font-size: 30px;
 }
-
-/*@media screen and (max-width: 450px) {*/
-    /*.overlay a {*/
-        /*font-size: 20px;*/
-    /*}*/
-
-    /*.overlay .close {*/
-        /*font-size: 40px;*/
-        /*top: 15px;*/
-        /*right: 35px;*/
-    /*}*/
-/*}*/
