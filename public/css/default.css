@@ -18,7 +18,7 @@ h1, h2, h3, h4, h5, h6, p, a {
     padding: 0;
 }
 body {
-    background: url("../img/fujisan-2560x1440p.jpg") center no-repeat;
+    background: url("../img/fujisan-2560x1440p.jpg") center fixed;
     background-size: cover;
 }
 
@@ -77,15 +77,6 @@ h1:hover, span:hover {
 }
 
 /*MOBILE NAVIGATION SECTION*/
-@media screen and (max-width: 800px) {
-    .nav__links {
-        display: none;
-    }
-    .menu {
-        display: inherit;
-    }
-}
-
 .overlay {
     height: 100%;
     width: 0%;
@@ -122,4 +113,23 @@ h1:hover, span:hover {
     top: 20px;
     right: 15px;
     font-size: 30px;
+}
+
+@media screen and (max-width: 800px) {
+    .nav__links {
+        display: none;
+    }
+    .menu {
+        display: inherit;
+    }
+}
+
+@media screen and (max-width: 365px) {
+    h1, span{
+        font-size: 1em;
+    }
+
+    .overlay a {
+        font-size: 1em;
+    }
 }
