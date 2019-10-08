@@ -17,10 +17,12 @@ h1, h2, h3, h4, h5, h6, p, a {
     margin: 0;
     padding: 0;
 }
-body {
-    background: url("../img/fujisan-2560x1440p.jpg") center fixed;
-    background-size: cover;
-}
+/*body {*/
+/*    background: url("../img/fujisan-2560x1440p.jpg") center fixed;*/
+/*    background-size: cover;*/
+/*}*/
+
+body {background-color: var(--main-black)}
 
 li, a {
     text-transform: uppercase;
@@ -110,7 +112,6 @@ h1:hover, span:hover {
 
 .overlay .close {
     position: absolute;
-    top: 20px;
     right: 15px;
     font-size: 30px;
 }
@@ -124,7 +125,7 @@ h1:hover, span:hover {
     }
 }
 
-@media screen and (max-width: 365px) {
+@media screen and (max-width: 570px) {
     h1, span{
         font-size: 1em;
     }
