@@ -44,6 +44,8 @@ header {
     align-items: center;
     padding: 0px 5%;
     height: 8vh;
+    position: sticky;
+    top: 0;
 }
 
 h1:hover, span:hover {

@@ -1,40 +1,68 @@
 h1, h2, h3, h4, h5, h6, p, a {
     font-family: Roboto, sans-serif;
 }
-
 .main {
     height: 92vh;
     width: 90%;
     margin: 0 auto;
     text-align: center;
 }
-
+/* Header Styling */
 .main__header {
-    padding-top: 20vh;
+    padding-top: 30vh;
     color: var(--main-white);
-    width: 70%;
+    width: 90%;
     margin: 0 auto;
-    text-align: left;
+    text-align: center;
+    font-size: 15px;
 }
 
 .main__header-location {
     display: inline-flex;
     list-style: none;
 }
+
+/* Icon Styling*/
+.main__icons li {
+    padding: 0 10px 0 10px;
+}
 .main__header-h4 {
     padding-top: auto;
 }
 
 .main__icons {
-    padding-top: 5vh;
+    padding-top: 10vh;
 }
 
 .main__icons ul {
     display: inline-flex;
     list-style: none;
 }
-/* SVG coloring */
+
+/* SVG Styling */
 .svg {
-    height: 16px;
+    height: 30px;
+    padding-bottom: 10px;
+    width: auto;
     fill: var(--main-white);
+}
+
+.main__icons-hover:hover, .svg:hover {
+    fill: var(--main-blue);
+    color: var(--main-blue);
+    transition: .3s ease;
+}
+
+/* Search bar Styling */
+.searchbar {
+    height: 10vh;
+    background: var(--main-white);
+    box-shadow: 0px 11px 15px #00000029;
+    opacity: 1;
+}
+
+/* About Styling */
+.about-content {
+    height: 90vh;
+    background-color: #F0F0F0;
 }
