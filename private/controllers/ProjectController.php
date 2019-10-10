@@ -8,8 +8,8 @@
 
 class ProjectController {
     function projectpage(){
-        include __DIR__ . '/../views/header.php';
         include __DIR__ . '/../views/';
-        include __DIR__ . '/../views/footer.php';
+        include __DIR__ . '/../views/';
+        include __DIR__ . '/../views/';
     }
 }

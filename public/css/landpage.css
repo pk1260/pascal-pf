@@ -1,0 +1,40 @@
+h1, h2, h3, h4, h5, h6, p, a {
+    font-family: Roboto, sans-serif;
+}
+
+.main {
+    height: 92vh;
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.main__header {
+    padding-top: 20vh;
+    color: var(--main-white);
+    width: 70%;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.main__header-location {
+    display: inline-flex;
+    list-style: none;
+}
+.main__header-h4 {
+    padding-top: auto;
+}
+
+.main__icons {
+    padding-top: 5vh;
+}
+
+.main__icons ul {
+    display: inline-flex;
+    list-style: none;
+}
+/* SVG coloring */
+.svg {
+    height: 16px;
+    fill: var(--main-white);
+}
