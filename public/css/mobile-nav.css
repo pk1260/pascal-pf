@@ -22,7 +22,9 @@ h1, h2, h3, h4, h5, h6, p, a {
 /*    background-size: cover;*/
 /*}*/
 
-body {background-color: var(--main-blue)}
+body {
+    background-color: var(--main-blue)
+}
 
 li, a {
     text-transform: uppercase;
