@@ -57,12 +57,33 @@ h1, h2, h3, h4, h5, h6, p, a {
 .searchbar {
     height: 10vh;
     background: var(--main-white);
-    box-shadow: 0px 11px 15px #00000029;
+    box-shadow: 0px 11px 15px rgba(0, 0, 0, 0.16);
     opacity: 1;
 }
 
 /* About Styling */
 .about-content {
     height: 90vh;
-    background-color: #F0F0F0;
+    background-color: var(--main-grey);
+    text-align: center;
+    padding: 0px 5%;
+}
+
+.about-content-h3 {
+    padding: 2em 0 1em 0;
+    text-transform: uppercase;
+}
+.about-content-img {
+    border-radius: 50%;
+    width: 110px;
+}
+
+.about-content-p {
+    padding: 1em 0 1em 0;
+    font-size: 12px;
+}
+/* Project Mini Display Styling */
+.display-content {
+    height: 2em;
+    background-color: var(--main-white);
 }

@@ -80,5 +80,10 @@
 
 </div>
 <div class="about-content">
+    <h3 class="about-content-h3">About me</h3>
+    <img class="about-content-img" src="img/pascal-k.jpg" alt="Pascal Kuiper">
+    <p class="about-content-p">Mijn naam is pascal kuiper</p>
+</div>
+<div class="display-content">
 
 </div>
