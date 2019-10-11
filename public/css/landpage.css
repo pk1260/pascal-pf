@@ -62,28 +62,28 @@ h1, h2, h3, h4, h5, h6, p, a {
 }
 
 /* About Styling */
-.about-content {
+.about__content {
     height: 90vh;
     background-color: var(--main-grey);
     text-align: center;
     padding: 0px 5%;
 }
 
-.about-content-h3 {
+.about__content-h3 {
     padding: 2em 0 1em 0;
     text-transform: uppercase;
 }
-.about-content-img {
+.about__content-img {
     border-radius: 50%;
     width: 110px;
 }
 
-.about-content-p {
+.about__content-p {
     padding: 1em 0 1em 0;
     font-size: 12px;
 }
 /* Project Mini Display Styling */
-.display-content {
+.display__content {
     height: 2em;
     background-color: var(--main-white);
 }

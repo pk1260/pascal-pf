@@ -51,12 +51,12 @@ $router->setBasePath($CONFIG['BASE_URL']);
  * Hier stellen we de juiste "routes" in voor onze website
  * We vertellen de router welke url naar welk stukje code (de controller) moet worden doorgestuuurd.
  */
-$router->map( 'GET', '/',           'HomeController#homepage',              'home' );
-$router->map( 'GET', '/portfolio',  'PortfolioController#portfoliopage',    'portfolio' );
-$router->map( 'GET', '/project',    'ProjectController#projectpage',        'project' );
-$router->map( 'GET', '/blog',       'BlogController#blogpage',              'blog' );
-$router->map( 'GET', '/contact',    'ContactController#contactpage',        'contact' );
-$router->map( 'GET', '/notfound',   'NotFoundController#notfound',          '404 page not found' );
+$router->map( 'GET', '/',           'HomeController#homepage',          'home');
+$router->map( 'GET', '/portfolio',  'PortfolioController#portfoliopage',    'portfolio');
+$router->map( 'GET', '/project',    'ProjectController#projectpage',        'project');
+$router->map( 'GET', '/blog',       'BlogController#blogpage',              'blog');
+$router->map( 'GET', '/contact',    'ContactController#contactpage',        'contact');
+$router->map( 'GET', '/notfound',   'NotFoundController#notfound',          '404');
 
 $router->map( 'GET', '/voorbeeld', function () {
     echo 'Zo kun je ook een route afhandelen door een inline functie te gebruiken, maar dat wordt al snel rommelig (deze mag je dus weer weghalen of laten staan als voorbeeld';
