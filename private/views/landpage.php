@@ -87,8 +87,12 @@
 </div>
 <div class="display__content">
     <div class="display__content-preview">
-        <img src="" alt="Project-preview" class="display__content-img">
-        <h3 class="display__content-h3"></h3>
-
+        <img src="img/tokyo-2560x1440p.jpg" alt="" class="display__content-preview-img">
+        <h3 class="display__content-preview-h3">Project 1</h3>
+        <ul class="display__content-preview-ul">
+            <li class="display__content-preview-li"><p>text</p></li>
+            <li class="display__content-preview-li"><p>text</p></li>
+        </ul>
+        <a href="" class="display__content-preview-a">VIEW</a>
     </div>
 </div>
