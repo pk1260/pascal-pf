@@ -5,7 +5,7 @@
     --main-blue:    #2ABDFF;
     --main-white:   #ffffff;
     --main-grey:    #F0F0F0;
-    --trans-black:  rgba(0, 0, 0, .9)
+    --trans-black:  rgba(0, 0, 0, .9);
 }
 /*TEKST SETUP*/
 h1, h2, h3, h4, h5, h6, p, a {

@@ -1,12 +1,14 @@
 h1, h2, h3, h4, h5, h6, p, a {
     font-family: Roboto, sans-serif;
 }
+
 .main {
     height: 92vh;
     width: 90%;
     margin: 0 auto;
     text-align: center;
 }
+
 /* Header Styling */
 .main__header {
     padding-top: 30vh;
@@ -16,7 +18,6 @@ h1, h2, h3, h4, h5, h6, p, a {
     text-align: center;
     font-size: 15px;
 }
-
 .main__header-location {
     display: inline-flex;
     list-style: none;
@@ -29,11 +30,9 @@ h1, h2, h3, h4, h5, h6, p, a {
 .main__header-h4 {
     padding-top: auto;
 }
-
 .main__icons {
     padding-top: 10vh;
 }
-
 .main__icons ul {
     display: inline-flex;
     list-style: none;
@@ -46,7 +45,6 @@ h1, h2, h3, h4, h5, h6, p, a {
     width: auto;
     fill: var(--main-white);
 }
-
 .main__icons-hover:hover, .svg:hover {
     fill: var(--main-blue);
     color: var(--main-blue);
@@ -57,33 +55,58 @@ h1, h2, h3, h4, h5, h6, p, a {
 .searchbar {
     height: 10vh;
     background: var(--main-white);
-    box-shadow: 0px 11px 15px rgba(0, 0, 0, 0.16);
     opacity: 1;
 }
 
 /* About Styling */
-.about-content {
+.about__content {
     height: 90vh;
     background-color: var(--main-grey);
     text-align: center;
     padding: 0px 5%;
 }
-
-.about-content-h3 {
+.about__content-h3 {
     padding: 2em 0 1em 0;
     text-transform: uppercase;
 }
-.about-content-img {
+.about__content-img {
     border-radius: 50%;
     width: 110px;
 }
-
-.about-content-p {
+.about__content-p {
     padding: 1em 0 1em 0;
     font-size: 12px;
 }
+
 /* Project Mini Display Styling */
-.display-content {
-    height: 2em;
+.display__content {
     background-color: var(--main-white);
 }
+.display__content-preview {
+    border-bottom: var(--main-grey) solid 2px;
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 20px 0 ;
+}
+.display__content-preview-img {
+    width: 100%;
+}
+.display__content-preview-h3 {
+    padding: .3em 0;
+    text-align: left;
+}
+.display__content-preview-ul {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}
+.display__content-preview-li {
+    color: var(--main-black);
+    text-transform: none;
+    font-size: 14px;
+}
+.display__content-preview-a {
+    color: var(--main-black);
+}
+

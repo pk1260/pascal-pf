@@ -21,12 +21,12 @@
 </head>
 <body>
     <header>
-        <a href=""><h1>pascal<span>kuiper</span></h1></a>
+        <a href="/pascal-pf/public"><h1>pascal<span>kuiper</span></h1></a>
         <nav>
             <ul class="nav__links">
-                <li><a href="">portfolio</a></li>
-                <li><a href="">blog</a></li>
-                <li><a href="">contact</a></li>
+                <li><a href="portfolio">portfolio</a></li>
+                <li><a href="blog">blog</a></li>
+                <li><a href="contact">contact</a></li>
             </ul>
             <a onclick="openNav()" class="menu">menu</a>
         </nav>
@@ -34,9 +34,9 @@
     <div id="mobile__menu" class="overlay">
         <a class="close" onclick="closeNav()">&times;</a>
         <div class="overlay__content">
-            <a href="">portfolio</a>
-            <a href="">blog</a>
-            <a href="">contact</a>
+            <a href="portfolio">portfolio</a>
+            <a href="blog">blog</a>
+            <a href="contact">contact</a>
         </div>
     </div>
     <script type="text/javascript" src="js/mobile-nav.js"></script>

@@ -1,5 +1,5 @@
 <?php
 
-function displayCards() {
+function displayProjects() {
 
 }
