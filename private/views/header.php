@@ -18,6 +18,7 @@
     <link rel="stylesheet" href="css/mobile-nav.css">
     <link rel="stylesheet" href="css/landpage.css">
     <link rel="stylesheet" href="css/portfolio.css">
+    <link rel="stylesheet" href="css/project.css">
     <title>Document</title>
 </head>
 <body>

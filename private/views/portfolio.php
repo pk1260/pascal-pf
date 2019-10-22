@@ -23,35 +23,35 @@
 
 <div class="portfolio__content">
     <h2 class="display__content-preview-h2">My Projects</h2>
-    <a href="">
+    <a href="project">
     <div class="portfolio__preview-content">
         <img src="img/tokyo-2560x1440p.jpg" alt="" class="portfolio__preview-content-img">
         <h3 class="portfolio__preview-content-h3">Project 1</h3>
-        <h4 class="portfolio__preview-content-h4">sub name</h4>
+        <h4 class="portfolio__preview-content-h4">Tag</h4>
     </div>
     </a>
 
-    <a href="">
+    <a href="project">
         <div class="portfolio__preview-content">
             <img src="img/tokyo-2560x1440p.jpg" alt="" class="portfolio__preview-content-img">
             <h3 class="portfolio__preview-content-h3">Project 1</h3>
-            <h4 class="portfolio__preview-content-h4">sub name</h4>
+            <h4 class="portfolio__preview-content-h4">Tag</h4>
         </div>
     </a>
 
-    <a href="">
+    <a href="project">
         <div class="portfolio__preview-content">
             <img src="img/tokyo-2560x1440p.jpg" alt="" class="portfolio__preview-content-img">
             <h3 class="portfolio__preview-content-h3">Project 1</h3>
-            <h4 class="portfolio__preview-content-h4">sub name</h4>
+            <h4 class="portfolio__preview-content-h4">Tag</h4>
         </div>
     </a>
 
-    <a href="">
+    <a href="project">
         <div class="portfolio__preview-content">
             <img src="img/tokyo-2560x1440p.jpg" alt="" class="portfolio__preview-content-img">
             <h3 class="portfolio__preview-content-h3">Project 1</h3>
-            <h4 class="portfolio__preview-content-h4">sub name</h4>
+            <h4 class="portfolio__preview-content-h4">Tag</h4>
         </div>
     </a>
 </div>

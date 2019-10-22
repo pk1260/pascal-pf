@@ -9,7 +9,7 @@
 class ProjectController {
     function projectpage(){
         include __DIR__ . '/../views/header.php';
-        include __DIR__ . '/../views/projects.php';
+        include __DIR__ . '/../views/project.php';
         include __DIR__ . '/../views/footer.php';
     }
 }
