@@ -1,0 +1,65 @@
+/* Header Styling */
+.portfolio__main {
+    height: 92vh;
+}
+.portfolio__header {
+    padding-top: 40vh;
+    color: var(--main-white);
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 15px;
+    text-transform: uppercase;
+}
+/*Search bar field*/
+input[type=text], select {
+    width: 180px;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid var(--main-blue);
+    box-sizing: border-box;
+}
+
+input[type=submit] {
+    width: 70px;
+    color: var(--main-white);
+    background-color: var(--main-blue);
+    border: 1px solid var(--main-blue);
+    padding: 12px;
+    margin: 8px 0;
+    cursor: pointer;
+}
+
+/*Portfolio projects display*/
+.portfolio__content {
+    background-color: var(--main-white);
+}
+
+.portfolio__preview-content {
+    width: 90%;
+    margin: 0 auto;
+    text-align: left;
+    padding: 20px 0 5px;
+    border-bottom: var(--main-grey) solid 2px;
+}
+
+.portfolio__preview-content-img {
+    width: 100%;
+}
+
+.portfolio__preview-content-h3 {
+    color: var(--main-black);
+    font-size: 1em;
+    padding: .2em 0;
+    text-align: left;
+}
+.portfolio__preview-content-h4 {
+    color: var(--main-blue);
+    font-size: .6em;
+    padding: .3em 0;
+    text-align: left;
+}
+.portfolio__preview-content-a {
+    color: var(--main-black);
+}
