@@ -44,23 +44,10 @@
 <div class="display__content">
     <h2 class="display__content-preview-h2">My Projects</h2>
     <div class="display__content-preview">
-        <img src="img/tokyo-2560x1440p.jpg" alt="" class="display__content-preview-img">
-        <h3 class="display__content-preview-h3">Project 1</h3>
-        <a href="project" class="display__content-preview-a">VIEW</a>
-    </div>
-    <div class="display__content-preview">
-        <img src="img/tokyo-2560x1440p.jpg" alt="" class="display__content-preview-img">
-        <h3 class="display__content-preview-h3">Project 2</h3>
-        <a href="project" class="display__content-preview-a">VIEW</a>
-    </div>
-    <div class="display__content-preview">
-        <img src="img/tokyo-2560x1440p.jpg" alt="" class="display__content-preview-img">
-        <h3 class="display__content-preview-h3">Project 3</h3>
-        <a href="project" class="display__content-preview-a">VIEW</a>
-    </div>
-    <div class="display__content-preview">
-        <img src="img/tokyo-2560x1440p.jpg" alt="" class="display__content-preview-img">
-        <h3 class="display__content-preview-h3">Project 4</h3>
-        <a href="project" class="display__content-preview-a">VIEW</a>
+        <div class="display__content-box">
+            <img src="img/tokyo-2560x1440p.jpg" alt="" class="display__content-preview-img">
+            <h3 class="display__content-preview-h3">Project 1</h3>
+            <a href="project" class="display__content-preview-a">VIEW</a>
+        </div>
     </div>
 </div>

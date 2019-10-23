@@ -11,7 +11,7 @@
     font-size: 15px;
     text-transform: uppercase;
 }
-/*Search bar field*/
+
 input[type=text], select {
     width: 180px;
     padding: 12px 20px;
@@ -66,10 +66,14 @@ input[type=submit] {
 
 /*TABLET VIEW*/
 @media screen and (min-width: 570px) {
-
+    .portfolio__header-h2 {
+        font-size: 60px;
+    }
 }
 
 /*DESKTOP SCREEN*/
 @media screen and (min-width: 1070px) {
-
+    .portfolio__header-h2 {
+        font-size: 60px;
+    }
 }

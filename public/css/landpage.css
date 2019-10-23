@@ -25,7 +25,7 @@ h1, h2, h3, h4, h5, h6, p, a {
 
 /* Icon Styling*/
 .main__icons li {
-    padding: 0 10px 0 20px;
+    padding: 0 10px 0 10px;
 }
 .main__header-h4 {
     padding-top: auto;
@@ -56,7 +56,9 @@ h1, h2, h3, h4, h5, h6, p, a {
     height: 10vh;
     background: var(--main-white);
     border-bottom: var(--main-grey) solid 2px;
-    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 /* About Styling */
@@ -109,12 +111,47 @@ h1, h2, h3, h4, h5, h6, p, a {
 }
 
 /*TABLET VIEW*/
+/*FONT SIZE P = 17px*/
 @media screen and (min-width: 570px) {
+    .main__header-h2 {
+        font-size: 40px;
+    }
 
+    .svg {
+        height: 75px;
+        padding-bottom: 10px;
+        width: auto;
+        fill: var(--main-white);
+    }
+
+    .main__icons li {
+        padding: 0 20px 0 20px;
+    }
+
+    .about__content-img {
+        width: 170px;
+    }
+
+    .about__content-p {
+        font-size: 17px;
+    }
 }
 
 /*DESKTOP SCREEN*/
 @media screen and (min-width: 1070px) {
+    .main__header-h2 {
+        font-size: 60px;
+    }
 
+    .svg {
+        height: 90px;
+        padding-bottom: 10px;
+        width: auto;
+        fill: var(--main-white);
+    }
+
+    .main__icons li {
+        padding: 0 40px 0 40px;
+    }
 }
 
