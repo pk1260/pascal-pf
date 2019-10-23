@@ -9,6 +9,7 @@
 <div class="main">
     <div class="main__header">
         <h2 class="main__header-h2">Mediadeveloper student</h2>
+        <div class="icon-scroll"></div>
     </div>
     <div class="main__icons">
         <ul class="main__icons-list">

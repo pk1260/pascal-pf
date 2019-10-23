@@ -16,24 +16,26 @@
 <div class="project__content-box">
     <div class="project__content">
         <h2 class="project__content-h3">Project 1</h2>
-        <img src="img/shibuya-stuff.png" alt="" class="project__content-img">
-        <div class="project__content-split">
-            <a href="" class="project__content-button" id="button-1">LIVE PREVIEW</a>
-            <a href="" class="project__content-button" id="button-2">GITHUB</a>
+        <div class="project__content-group-1">
+            <img src="img/shibuya-stuff.png" alt="" class="project__content-img">
+            <div class="project__content-split">
+                <a href="" class="project__content-button" id="button-1">LIVE PREVIEW</a>
+                <a href="" class="project__content-button" id="button-2">GITHUB</a>
+            </div>
+            <div class="project__content-list">
+                <ul class="project__content-list-left">
+                    <li>PHP</li>
+                    <li>JS</li>
+                    <li>HTML5</li>
+                </ul>
+                <ul class="project__content-list-right">
+                    <li>CSS</li>
+                    <li>JQUERY</li>
+                    <li>GITHUB</li>
+                </ul>
+            </div>
         </div>
-        <div class="project__content-list">
-            <ul class="project__content-list-left">
-                <li>a</li>
-                <li>a</li>
-                <li>a</li>
-            </ul>
-            <ul class="project__content-list-right">
-                <li>a</li>
-                <li>a</li>
-                <li>a</li>
-            </ul>
-        </div>
-        <div class="project__content-group">
+        <div class="project__content-group-2">
             <h4 class="project__content-h4">My role:</h4>
             <p class="project__content-p">It is a long established fact that a reader will be distracted by the
                 readable

@@ -108,3 +108,13 @@ h1, h2, h3, h4, h5, h6, p, a {
     color: var(--main-black);
 }
 
+/*TABLET VIEW*/
+@media screen and (min-width: 570px) {
+
+}
+
+/*DESKTOP SCREEN*/
+@media screen and (min-width: 1070px) {
+
+}
+

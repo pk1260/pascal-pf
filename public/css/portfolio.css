@@ -1,4 +1,4 @@
-/* Header Styling */
+/*MOBILE VIEW*/
 .portfolio__main {
     height: 92vh;
 }
@@ -62,4 +62,14 @@ input[type=submit] {
 }
 .portfolio__preview-content-a {
     color: var(--main-black);
+}
+
+/*TABLET VIEW*/
+@media screen and (min-width: 570px) {
+
+}
+
+/*DESKTOP SCREEN*/
+@media screen and (min-width: 1070px) {
+
 }

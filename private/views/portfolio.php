@@ -9,6 +9,7 @@
 <div class="portfolio__main">
     <div class="portfolio__header">
         <h2 class="portfolio__header-h2">Portfolio projects</h2>
+        <div class="icon-scroll"></div>
     </div>
 </div>
 
