@@ -22,7 +22,7 @@
     <title>Document</title>
 </head>
 <body>
-    <header>
+    <header id="header">
         <a href="/pascal-pf/public"><h1>pascal<span>kuiper</span></h1></a>
         <nav>
             <ul class="nav__links">

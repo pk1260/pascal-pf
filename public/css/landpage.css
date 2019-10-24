@@ -18,6 +18,7 @@ h1, h2, h3, h4, h5, h6, p, a {
     text-align: center;
     font-size: 15px;
 }
+
 .main__header-location {
     display: inline-flex;
     list-style: none;
@@ -27,12 +28,15 @@ h1, h2, h3, h4, h5, h6, p, a {
 .main__icons li {
     padding: 0 10px 0 10px;
 }
+
 .main__header-h4 {
     padding-top: auto;
 }
+
 .main__icons {
     padding-top: 10vh;
 }
+
 .main__icons ul {
     display: inline-flex;
     list-style: none;
@@ -45,6 +49,7 @@ h1, h2, h3, h4, h5, h6, p, a {
     width: auto;
     fill: var(--main-white);
 }
+
 .main__icons-hover:hover, .svg:hover {
     fill: var(--main-blue);
     color: var(--main-blue);
@@ -68,15 +73,18 @@ h1, h2, h3, h4, h5, h6, p, a {
     text-align: center;
     padding: 0px 5%;
 }
+
 .about__content-h3 {
     font-size: 1.8em;
     padding: 1em 0 1em 0;
     text-transform: uppercase;
 }
+
 .about__content-img {
     border-radius: 50%;
     width: 110px;
 }
+
 .about__content-p {
     padding: 1em 0 1em 0;
     font-size: 12px;
@@ -86,29 +94,53 @@ h1, h2, h3, h4, h5, h6, p, a {
 .display__content {
     background-color: var(--main-white);
 }
+
 .display__content-preview {
-    border-bottom: var(--main-grey) solid 2px;
     width: 90%;
     margin: 0 auto;
     text-align: center;
-    padding: 20px 0 ;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
+
 .display__content-preview-img {
-     width: 100%;
- }
+    width: 100%;
+}
+
 .display__content-preview-h2 {
     padding-top: 20px;
     font-size: 2em;
     text-align: center;
 }
+
 .display__content-preview-h3 {
     font-size: 1.4em;
-    padding: .3em 0;
+    padding: .3em 0 1em;
     text-align: center;
 }
+
 .display__content-preview-a {
-    color: var(--main-black);
+    color: var(--main-blue);
+    border: var(--main-blue) 2px solid;
+    border-radius: 5px;
+    padding: 5px 10px 5px 10px;
 }
+
+.display__content-preview-a:hover {
+    background-color: var(--main-blue);
+    color: var(--main-white);
+    transition: .3s ease;
+}
+
+.display__content-box {
+    height: 100%;
+    width: 280px;
+    border-bottom: var(--main-grey) solid 2px;
+    padding: 10px 0 20px;
+    margin: 10px;
+}
+
 
 /*TABLET VIEW*/
 /*FONT SIZE P = 17px*/
@@ -138,7 +170,7 @@ h1, h2, h3, h4, h5, h6, p, a {
 }
 
 /*DESKTOP SCREEN*/
-@media screen and (min-width: 1070px) {
+@media screen and (min-width: 1000px) {
     .main__header-h2 {
         font-size: 60px;
     }
@@ -152,6 +184,10 @@ h1, h2, h3, h4, h5, h6, p, a {
 
     .main__icons li {
         padding: 0 40px 0 40px;
+    }
+
+    .display__content-box {
+        width: 400px;
     }
 }
 

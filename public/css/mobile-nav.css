@@ -5,7 +5,6 @@
     --main-blue:    #2ABDFF;
     --main-white:   #ffffff;
     --main-grey:    #F0F0F0;
-    --trans-black:  rgba(0, 0, 0, .9);
 }
 /*TEKST SETUP*/
 h1, h2, h3, h4, h5, h6, p, a, li{
@@ -26,6 +25,8 @@ body {
     /*background-color: var(--main-blue);*/
     background: url("../img/fujisan-2560x1440p.jpg") center fixed;
     background-size: cover;
+    margin: 0;
+    padding: 0;
 }
 
 li, a {
@@ -47,7 +48,10 @@ header {
     padding: 0px 5%;
     height: 8vh;
     position: sticky;
-    top: 5px;
+    top: 0;
+    transition: .3s ease;
+    background-color: var(--main-black);
+    z-index: 1;
 }
 
 h1:hover, span:hover {
@@ -93,7 +97,7 @@ h1:hover, span:hover {
     z-index: 1;
     left: 0;
     top: 0;
-    background-color: var(--trans-black);
+    background-color: var(--main-black);
     overflow-x: hidden;
     transition: all .5s ease 0s;
 }
