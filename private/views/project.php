@@ -5,6 +5,13 @@
  * Date: 2019-10-11
  * Time: 09:52
  */
+if(isset($_GET['proj_id'])) {
+    echo 'mislukt';
+} else {
+    $local_id = $_GET['proj_id'];
+
+    $portfolio = displayProject();
+}
 ?>
 <div class="project__main">
     <div class="project__header">
@@ -14,61 +21,36 @@
 </div>
 
 <div class="project__content-box">
+    <?php foreach (array_slice($portfolio, 0, 1) as $project) { ?>
     <div class="project__content">
-        <h2 class="project__content-h3">Project 1</h2>
+        <h2 class="project__content-h3"><?php echo $project['proj_name']?></h2>
         <div class="project__content-group-1">
-            <img src="img/shibuya-stuff.png" alt="" class="project__content-img">
+            <img src="<?php echo url('/img/' . $project['proj_img']) ?>" alt="" class="project__content-img">
             <div class="project__content-split">
-                <a href="" class="project__content-button" id="button-1">LIVE PREVIEW</a>
-                <a href="" class="project__content-button" id="button-2">GITHUB</a>
+                <a href="<?php echo $project['proj_prev']?>" target="_blank" class="project__content-button" id="button-1">LIVE PREVIEW</a>
+                <a href="<?php echo $project['proj_git']?>" target="_blank" class="project__content-button" id="button-2">GITHUB</a>
             </div>
             <div class="project__content-list">
                 <ul class="project__content-list-left">
-                    <li>PHP</li>
-                    <li>JS</li>
-                    <li>HTML5</li>
+                    <li><?php if($project['proj_code-1'] > "") echo '◎ ' . $project['proj_code-1']; ?></li>
+                    <li><?php if($project['proj_code-2'] > "") echo '◎ ' . $project['proj_code-2']; ?></li>
+                    <li><?php if($project['proj_code-3'] > "") echo '◎ ' . $project['proj_code-3']; ?></li>
                 </ul>
                 <ul class="project__content-list-right">
-                    <li>CSS</li>
-                    <li>JQUERY</li>
-                    <li>GITHUB</li>
+                    <li><?php if($project['proj_code-4'] > "") echo '◎ ' . $project['proj_code-4']; ?></li>
+                    <li><?php if($project['proj_code-5'] > "") echo '◎ ' . $project['proj_code-5']; ?></li>
+                    <li><?php if($project['proj_code-6'] > "") echo '◎ ' . $project['proj_code-6']; ?></li>
                 </ul>
             </div>
         </div>
         <div class="project__content-group-2">
             <h4 class="project__content-h4">My role:</h4>
-            <p class="project__content-p">It is a long established fact that a reader will be distracted by the
-                readable
-                content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a
-                more-or-less normal distribution of letters, as opposed to using 'Content here, content here',
-                making it
-                look like readable English. Many desktop publishing packages and web page editors now use Lorem
-                Ipsum as
-                their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their
-                infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose
-                (injected humour and the like).</p>
+            <p class="project__content-p"><?php echo $project['proj_role']?></p>
             <h4 class="project__content-h4">Project difficulties:</h4>
-            <p class="project__content-p">It is a long established fact that a reader will be distracted by the
-                readable
-                content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a
-                more-or-less normal distribution of letters, as opposed to using 'Content here, content here',
-                making it
-                look like readable English. Many desktop publishing packages and web page editors now use Lorem
-                Ipsum as
-                their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their
-                infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose
-                (injected humour and the like).</p>
+            <p class="project__content-p"><?php echo $project['proj_diff']?></p>
             <h4 class="project__content-h4">My solution:</h4>
-            <p class="project__content-p">It is a long established fact that a reader will be distracted by the
-                readable
-                content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a
-                more-or-less normal distribution of letters, as opposed to using 'Content here, content here',
-                making it
-                look like readable English. Many desktop publishing packages and web page editors now use Lorem
-                Ipsum as
-                their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their
-                infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose
-                (injected humour and the like).</p>
+            <p class="project__content-p"><?php echo $project['proj_solu']?></p>
         </div>
     </div>
+    <?php } ?>
 </div>

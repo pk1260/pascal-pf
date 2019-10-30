@@ -20,3 +20,9 @@ function dbConnect()
     }
 
 }
+
+function url($path){
+    global $CONFIG;
+
+    return $CONFIG['BASE_URL'] . $path;
+}

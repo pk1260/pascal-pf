@@ -10,7 +10,7 @@
 $config = [
 
     'DB_HOST' => 'localhost',
-    'DB_NAME' => 'SpaceX-Project',
+    'DB_NAME' => 'portfolio',
     'DB_USER' => 'root',
     'DB_PASSWORD' => '',
     'BASE_URL' => '/pascal-pf/public',

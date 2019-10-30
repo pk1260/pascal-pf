@@ -74,8 +74,7 @@
     list-style-type: none;
 }
 
-.project__content-list li:before {
-    content: "◎ ";
+.project__content-list li::first-letter {
     color: var(--main-blue);
 }
 
