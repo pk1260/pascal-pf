@@ -5,14 +5,6 @@
  * Date: 2019-10-11
  * Time: 09:52
  */
-
-if (!isset($_GET['proj_id'])) {
-    echo 'mislukt';
-} else {
-    $project_id = $_GET['proj_id'];
-}
-
-$portfolio = displayProject($project_id);
 ?>
 <div class="project__main">
     <div class="project__header">
@@ -22,9 +14,8 @@ $portfolio = displayProject($project_id);
 </div>
 
 <div class="project__content-box">
-    <?php foreach (array_slice($portfolio, 0, 1) as $project) { ?>
     <div class="project__content">
-        <h2 class="project__content-h3"><?php echo $project['proj_name']?></h2>
+        <h2 class="project__content-h3">Project: <?php echo $project['proj_name']?></h2>
         <div class="project__content-group-1">
             <img src="<?php echo url('/img/' . $project['proj_img']) ?>" alt="" class="project__content-img">
             <div class="project__content-split">
@@ -53,5 +44,4 @@ $portfolio = displayProject($project_id);
             <p class="project__content-p"><?php echo $project['proj_solu']?></p>
         </div>
     </div>
-    <?php } ?>
 </div>

@@ -1,3 +1,4 @@
 .DS_store
 *.xml
 *.iml
+._*

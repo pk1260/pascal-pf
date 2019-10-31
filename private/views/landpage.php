@@ -5,7 +5,6 @@
  * Date: 2019-10-04
  * Time: 11:34
  */
-$preview = displayPreview();
 ?>
 <div class="main">
     <div class="main__header">
@@ -59,7 +58,7 @@ $preview = displayPreview();
                 </a>
             </li>
             <li>
-                <a href="img/#" download class="main__icons-hover" target="_blank">
+                <a href="img/Curriculum-vitae-PascalKuiper-ENG.pdf" download class="main__icons-hover" target="_blank">
                     <svg class="svg" id="Capa_1" data-name="Capa 1" xmlns="http://www.w3.org/2000/svg"
                          viewBox="0 0 438.55 622.67">
                         <defs>
@@ -92,11 +91,11 @@ $preview = displayPreview();
 <div class="display__content">
     <h2 class="display__content-preview-h2">My Projects</h2>
     <div class="display__content-preview">
-        <?php foreach (array_slice($preview, 0,4) as $project) { ?>
+        <?php foreach ($preview as $project) { ?>
             <div class="display__content-box">
                 <img src="<?php echo url('/img/' . $project['proj_img']) ?>" alt="" class="display__content-preview-img">
                 <h3 class="display__content-preview-h3"><?php echo $project['proj_name']?></h3>
-                <a href="project?project=<?php echo $project['proj_id']?>" class="display__content-preview-a">VIEW</a>
+                <a href="project/<?php echo $project['proj_slug']?>" class="display__content-preview-a">VIEW</a>
             </div>
         <?php } ?>
     </div>

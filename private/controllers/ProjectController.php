@@ -7,9 +7,10 @@
  */
 
 class ProjectController {
-    function projectpage(){
+    function projectDetailPage($proj_slug){
+        $project = displayProject($proj_slug);
         include __DIR__ . '/../views/header.php';
-        include __DIR__ . '/../views/project.php';
+        include __DIR__ . '/../views/project-detail.php';
         include __DIR__ . '/../views/footer.php';
     }
 }

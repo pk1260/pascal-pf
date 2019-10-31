@@ -24,35 +24,15 @@
 
 <div class="portfolio__content">
     <h2 class="display__content-preview-h2">My Projects</h2>
-    <a href="project">
-    <div class="portfolio__preview-content">
-        <img src="img/tokyo-2560x1440p.jpg" alt="" class="portfolio__preview-content-img">
-        <h3 class="portfolio__preview-content-h3">Project 1</h3>
-        <h4 class="portfolio__preview-content-h4">Tag</h4>
+    <?php foreach ($portfolio as $project) { ?>
+    <div class="portfolio__container">
+        <a href="project/<?php echo $project['proj_slug']?>">
+            <div class="portfolio__preview-content">
+                <img src="<?php echo url('/img/' . $project['proj_img']) ?>" alt="" class="portfolio__preview-content-img">
+                <h3 class="portfolio__preview-content-h3"><?php echo $project['proj_name'] ?></h3>
+                <h4 class="portfolio__preview-content-h4"><?php echo $project['proj_tag'] ?></h4>
+            </div>
+        </a>
     </div>
-    </a>
-
-    <a href="project">
-        <div class="portfolio__preview-content">
-            <img src="img/tokyo-2560x1440p.jpg" alt="" class="portfolio__preview-content-img">
-            <h3 class="portfolio__preview-content-h3">Project 1</h3>
-            <h4 class="portfolio__preview-content-h4">Tag</h4>
-        </div>
-    </a>
-
-    <a href="project">
-        <div class="portfolio__preview-content">
-            <img src="img/tokyo-2560x1440p.jpg" alt="" class="portfolio__preview-content-img">
-            <h3 class="portfolio__preview-content-h3">Project 1</h3>
-            <h4 class="portfolio__preview-content-h4">Tag</h4>
-        </div>
-    </a>
-
-    <a href="project">
-        <div class="portfolio__preview-content">
-            <img src="img/tokyo-2560x1440p.jpg" alt="" class="portfolio__preview-content-img">
-            <h3 class="portfolio__preview-content-h3">Project 1</h3>
-            <h4 class="portfolio__preview-content-h4">Tag</h4>
-        </div>
-    </a>
+    <?php } ?>
 </div>

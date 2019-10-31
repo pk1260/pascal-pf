@@ -8,6 +8,7 @@
 
 class HomeController {
     function homepage(){
+        $preview = displayPreview();
         include __DIR__ . '/../views/header.php';
         include __DIR__ . '/../views/landpage.php';
         include __DIR__ . '/../views/footer.php';

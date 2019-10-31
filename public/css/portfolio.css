@@ -36,6 +36,10 @@ input[type=submit] {
     background-color: var(--main-white);
 }
 
+.portfolio__container {
+    padding: 2em 0 2em;
+}
+
 .portfolio__preview-content {
     width: 90%;
     margin: 0 auto;

@@ -1,12 +1,12 @@
 <?php
 function displayPreview() {
-//    Empty data array
+    //    Empty array
     $data = [];
-//    Database connection
+    //    Connects to database
     $connection = dbConnect();
 
-//    Selecting all data from my database
-    $sql = 'SELECT * FROM `portfolio-projects`';
+    //    Selects everything from my database from table protfolio-projects
+    $sql = 'SELECT * FROM `portfolio-projects` ORDER BY `proj_id` DESC LIMIT 4';
     $stmt = $connection->query($sql);
 
     if ($stmt->rowCount()) {

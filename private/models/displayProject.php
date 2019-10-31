@@ -1,19 +1,16 @@
 <?php
-function displayProject($id) {
-//    Empty data array
-    $data = [];
-//    Database connection
+function displayProject($slug) {
+    //    Connects to database
     $connection = dbConnect();
 
-//    Selecting all data from my database
-    $sql = 'SELECT * FROM `portfolio-projects` WHERE proj_id = :id';
-    $stmt = $connection->query($sql);
-    $stmt->execute(['proj_id' => $id]);
+    //    Selects everything from my database from table protfolio-projects by using the row proj_id
+    $sql = 'SELECT * FROM `portfolio-projects` WHERE proj_slug = :proj_slug';
+    $stmt = $connection->prepare($sql);
+    $stmt->execute(['proj_slug' => $slug]);
     if ($stmt->rowCount()) {
-        $data = $stmt->fetchAll();
+        $data = $stmt->fetch();
+        //    Returns the content from the database
+        return $data;
     }
-    return $data;
 }
 ?>
-
-

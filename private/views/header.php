@@ -15,20 +15,20 @@
     <meta name="description" content="">
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <link rel="stylesheet" href="css/mobile-nav.css">
-    <link rel="stylesheet" href="css/landpage.css">
-    <link rel="stylesheet" href="css/portfolio.css">
-    <link rel="stylesheet" href="css/project.css">
-    <title>Document</title>
+    <link rel="stylesheet" href="<?php echo url('/css/mobile-nav.css')?>">
+    <link rel="stylesheet" href="<?php echo url('/css/landpage.css')?>">
+    <link rel="stylesheet" href="<?php echo url('/css/portfolio.css')?>">
+    <link rel="stylesheet" href="<?php echo url('/css/project.css')?>">
+    <title>PascalKuiper</title>
 </head>
 <body>
     <header id="header">
         <a href="/pascal-pf/public"><h1>pascal<span>kuiper</span></h1></a>
         <nav>
             <ul class="nav__links">
-                <li><a href="portfolio">portfolio</a></li>
-                <li><a href="blog">blog</a></li>
-                <li><a href="contact">contact</a></li>
+                <li><a href="/pascal-pf/public/portfolio">portfolio</a></li>
+                <li><a href="/pascal-pf/public/blog">blog</a></li>
+                <li><a href="/pascal-pf/public/contact">contact</a></li>
             </ul>
             <a onclick="openNav()" class="menu">menu</a>
         </nav>
@@ -36,11 +36,8 @@
     <div id="mobile__menu" class="overlay">
         <a class="close" onclick="closeNav()">&times;</a>
         <div class="overlay__content">
-            <a href="portfolio">portfolio</a>
-            <a href="blog">blog</a>
-            <a href="contact">contact</a>
+            <a href="/pascal-pf/public/portfolio">portfolio</a>
+            <a href="/pascal-pf/public/blog">blog</a>
+            <a href="/pascal-pf/public/contact">contact</a>
         </div>
     </div>
-    <script type="text/javascript" src="js/mobile-nav.js"></script>
-</body>
-</html>

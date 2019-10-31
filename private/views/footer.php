@@ -9,6 +9,6 @@
 <div class="footer__content">
 
 </div>
-<script type="text/javascript" src="js/mobile-nav.js"></script>
+<script type="text/javascript" src="<?php echo url('/js/mobile-nav.js')?>"></script>
 </body>
 </html>
