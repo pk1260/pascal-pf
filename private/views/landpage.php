@@ -84,7 +84,11 @@
 <div class="about__content">
     <h3 class="about__content-h3">About me</h3>
     <img class="about__content-img" src="img/pascal-k.jpg" alt="Pascal Kuiper">
-    <p class="about__content-p">My name is pascal kuiper</p>
+    <p class="about__content-p">
+        I am Pascal Kuiper, Media Developer, certified All-round DTP'r & Freelance Designer.<br>
+        Currently, I am enrolled at the MediaCollege Amsterdam as Mediadeveloper Secondary vocational education Level 4.<br>
+        I enjoy creating websites using HTML CSS PHP and JS.
+    </p>
 </div>
 
 <!--Miniture Projects-->
@@ -93,9 +97,10 @@
     <div class="display__content-preview">
         <?php foreach ($preview as $project) { ?>
             <div class="display__content-box">
-                <img src="<?php echo url('/img/' . $project['proj_img']) ?>" alt="" class="display__content-preview-img">
-                <h3 class="display__content-preview-h3"><?php echo $project['proj_name']?></h3>
-                <a href="project/<?php echo $project['proj_slug']?>" class="display__content-preview-a">VIEW</a>
+                <img src="<?php echo url('/img/' . $project['proj_img']) ?>" alt=""
+                     class="display__content-preview-img">
+                <h3 class="display__content-preview-h3"><?php echo $project['proj_name'] ?></h3>
+                <a href="project/<?php echo $project['proj_slug'] ?>" class="display__content-preview-a">VIEW</a>
             </div>
         <?php } ?>
     </div>

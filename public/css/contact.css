@@ -7,10 +7,11 @@
     width: 90%;
     margin: 0 auto;
     text-align: center;
-    padding-top: 20vh;
+    padding-top: 10vh;
 }
 .contact__content-h2 {
     text-transform: uppercase;
+    padding: 1em 1em;
 }
 .contact__content-form input, textarea{
     width: 240px;
@@ -21,6 +22,9 @@
 
 /*TABLET VIEW*/
 @media screen and (min-width: 570px) {
+    .contact__content {
+        padding-top: 15vh;
+    }
     .contact__content-h2 {
         font-size: 40px;
     }
@@ -46,6 +50,9 @@
 
 /*DESKTOP SCREEN*/
 @media screen and (min-width: 1000px) {
+    .contact__content-h2 {
+        font-size: 60px;
+    }
     .contact__content-form {
         justify-items: center;
     }
