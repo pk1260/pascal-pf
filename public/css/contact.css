@@ -1,0 +1,52 @@
+.contact__content-box {
+    height: 100vh;
+    background: var(--main-white);
+}
+
+.contact__content {
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 20vh;
+}
+.contact__content-h2 {
+    text-transform: uppercase;
+}
+.contact__content-form input, textarea{
+    width: 240px;
+}
+.contact__content-form textarea {
+    height: 140px;
+}
+
+/*TABLET VIEW*/
+@media screen and (min-width: 570px) {
+    .contact__content-h2 {
+        font-size: 40px;
+    }
+    .contact__content-form {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+
+    }
+    .contact__content-form input[type=text], select, input[type=email], select, textarea{
+        grid-column: 2/3;
+    }
+    .contact__content-form input[type=submit] {
+        grid-column: 2/3;
+    }
+    .contact__content-form input, textarea{
+        width: 360px;
+        height: 60px;
+    }
+    .contact__content-form textarea {
+        height: 290px;
+    }
+}
+
+/*DESKTOP SCREEN*/
+@media screen and (min-width: 1000px) {
+    .contact__content-form {
+        justify-items: center;
+    }
+}

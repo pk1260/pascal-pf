@@ -12,13 +12,14 @@
     text-transform: uppercase;
 }
 
-input[type=text], select {
+input[type=text], select, input[type=email], select, textarea {
     width: 180px;
     padding: 12px 20px;
     margin: 8px 0;
     display: inline-block;
     border: 1px solid var(--main-blue);
     box-sizing: border-box;
+    resize: none;
 }
 
 input[type=submit] {

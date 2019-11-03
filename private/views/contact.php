@@ -5,8 +5,6 @@
  * Date: 2019-10-11
  * Time: 09:50
  */
-echo 'contact';
-
 ?>
 
 <div class="project__main">
@@ -18,10 +16,11 @@ echo 'contact';
 
 <div class="contact__content-box">
     <div class="contact__content">
-        <form class="contact__content-form" action="mail" method="post">
-            <input type="text" name="name">
-            <input type="email" name="mail">
-            <input type="text" name="subject">
+        <h2 class="contact__content-h2">Contact me</h2>
+        <form class="contact__content-form" action="mail" method="get">
+            <input type="text" name="name" placeholder="name">
+            <input type="email" name="mail" placeholder="email">
+            <input type="text" name="subject" placeholder="subject">
             <textarea name="message" placeholder="message"></textarea>
             <input type="submit" name="SEND MAIL">
         </form>
