@@ -36,8 +36,15 @@ input[type=submit] {
     background-color: var(--main-white);
 }
 
+.portfolio__container-wrap {
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+
 .portfolio__container {
     padding: 2em 0 2em;
+    max-width: 500px;
 }
 
 .portfolio__preview-content {
@@ -73,11 +80,25 @@ input[type=submit] {
     .portfolio__header-h2 {
         font-size: 40px;
     }
+
+    .portfolio__preview-content-h3 {
+        font-size: 1.7em;
+    }
+    .portfolio__preview-content-h4 {
+        font-size: 1em;
+    }
+    .portfolio__container {
+        max-width: 350px;
+    }
 }
 
 /*DESKTOP SCREEN*/
 @media screen and (min-width: 1000px) {
     .portfolio__header-h2 {
         font-size: 60px;
+    }
+
+    .portfolio__container {
+        max-width: 600px;
     }
 }

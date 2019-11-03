@@ -53,8 +53,7 @@ $router->setBasePath($CONFIG['BASE_URL']);
  */
 $router->map( 'GET', '/',                       'HomeController#homepage',              'home');
 $router->map( 'GET', '/portfolio',              'PortfolioController#portfoliopage',    'portfolio');
-//$router->map( 'GET', '/project',    'ProjectController#projectpage',        'project');
-$router->map( 'GET', '/project/[a:proj_slug]',    'ProjectController#projectDetailPage',  'project-detail');
+$router->map( 'GET', '/project/[a:proj_slug]',  'ProjectController#projectDetailPage',  'project-detail');
 $router->map( 'GET', '/blog',                   'BlogController#blogpage',              'blog');
 $router->map( 'GET', '/contact',                'ContactController#contactpage',        'contact');
 $router->map( 'GET', '/notfound',               'NotFoundController#notfound',          '404');

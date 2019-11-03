@@ -24,6 +24,7 @@
 
 <div class="portfolio__content">
     <h2 class="display__content-preview-h2">My Projects</h2>
+    <div class="portfolio__container-wrap">
     <?php foreach ($portfolio as $project) { ?>
     <div class="portfolio__container">
         <a href="project/<?php echo $project['proj_slug']?>">
@@ -35,4 +36,5 @@
         </a>
     </div>
     <?php } ?>
+    </div>
 </div>
