@@ -56,7 +56,7 @@ $router->map( 'GET', '/portfolio',              'PortfolioController#portfoliopa
 $router->map( 'GET', '/project/[a:proj_slug]',  'ProjectController#projectDetailPage',  'project-detail');
 $router->map( 'GET', '/blog',                   'BlogController#blogpage',              'blog');
 $router->map( 'GET', '/contact',                'ContactController#contactpage',        'contact');
-$router->map( 'GET', '/notfound',               'NotFoundController#notfound',          '404');
+$router->map( 'GET', '/notfound',               'NotFoundController#notfoundpage',      '404');
 
 $router->map( 'GET', '/voorbeeld', function () {
     echo 'Zo kun je ook een route afhandelen door een inline functie te gebruiken, maar dat wordt al snel rommelig (deze mag je dus weer weghalen of laten staan als voorbeeld';
@@ -85,6 +85,6 @@ if ( is_array( $match ) && is_callable( $match['target'] ) ) {
     }
 } else {
     // Er is geen match dus een 404 pagina
-    header( $_SERVER["SERVER_PROTOCOL"] . ' 404 Not Found' );
+    header( 'location: notfound' );
     echo '404: Onbekende pagina';
 }

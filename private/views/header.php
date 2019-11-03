@@ -20,6 +20,7 @@
     <link rel="stylesheet" href="<?php echo url('/css/portfolio.css')?>">
     <link rel="stylesheet" href="<?php echo url('/css/project.css')?>">
     <link rel="stylesheet" href="<?php echo url('/css/contact.css')?>">
+    <link rel="stylesheet" href="<?php echo url('/css/notfound.css')?>">
     <link rel="icon" href="<?php echo url('/img/pk-1.png')?>" type="image/x-icon" />
     <title>PascalKuiper</title>
 </head>
