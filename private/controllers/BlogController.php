@@ -8,8 +8,10 @@
 
 class BlogController {
     function blogpage(){
-        include __DIR__ . '/../views/header.php';
-        include __DIR__ . '/../views/blog.php';
-        include __DIR__ . '/../views/footer.php';
+//        include __DIR__ . '/../views/header.php';
+//        include __DIR__ . '/../views/blog.php';
+//        include __DIR__ . '/../views/footer.php';
+
+        header('Location: ' . url('/underconstruction'));
     }
 }

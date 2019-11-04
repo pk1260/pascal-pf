@@ -36,7 +36,7 @@
             </div>
         </div>
         <div class="project__content-group-2">
-            <h4 class="project__content-h4">My role:</h4>
+            <h4 class="project__content-h4">Project information:</h4>
             <p class="project__content-p"><?php echo $project['proj_role']?></p>
             <h4 class="project__content-h4">Project difficulties:</h4>
             <p class="project__content-p"><?php echo $project['proj_diff']?></p>
