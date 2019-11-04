@@ -87,8 +87,26 @@
     <p class="about__content-p">
         I am Pascal Kuiper, Media Developer, certified All-round DTP'r & Freelance Designer.<br>
         Currently, I am enrolled at the MediaCollege Amsterdam as Mediadeveloper Secondary vocational education Level 4.<br>
-        I enjoy creating websites using HTML CSS PHP and JS.
+        I enjoy creating websites using HTML, CSS, PHP, and JS.
     </p>
+    <div class="progression__content">
+        <p class="progression__content-p">HTML</p>
+        <div class="progression__bar">
+            <div class="progression__bar-html">90%</div>
+        </div>
+        <p class="progression__content-p">CSS</p>
+        <div class="progression__bar">
+            <div class="progression__bar-css">85%</div>
+        </div>
+        <p class="progression__content-p">JS</p>
+        <div class="progression__bar">
+            <div class="progression__bar-js">60%</div>
+        </div>
+        <p class="progression__content-p">PHP</p>
+        <div class="progression__bar">
+            <div class="progression__bar-php">65%</div>
+        </div>
+    </div>
 </div>
 
 <!--Miniture Projects-->

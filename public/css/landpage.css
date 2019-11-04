@@ -76,7 +76,7 @@ h1, h2, h3, h4, h5, h6, p, a {
 
 .about__content-h3 {
     font-size: 1.8em;
-    padding: 1em 0 1em 0;
+    padding: 10px 0 10px 0;
     text-transform: uppercase;
 }
 
@@ -141,6 +141,32 @@ h1, h2, h3, h4, h5, h6, p, a {
     margin: 10px;
 }
 
+/*Progression bar */
+.progression__bar {
+    background-color: var(--dark-grey);
+    height: 20px;
+    border-radius: 16px
+}
+
+.progression__bar-html, .progression__bar-css, .progression__bar-js, .progression__bar-php{
+    background-color: var(--main-blue);
+    height: 20px;
+    padding-left: 10px;
+    border-radius: 16px;
+    text-align: left;
+    margin-top: 5px;
+    font-family: Roboto;
+    text-transform: uppercase;
+    color: var(--main-white);
+}
+.progression__bar-html {width: 90%;}
+.progression__bar-css {width: 85%;}
+.progression__bar-js {width: 60%;}
+.progression__bar-php {width: 65%;}
+.project__content-p {
+    padding-top: 5px;
+    font-weight: bold;
+}
 
 /*TABLET VIEW*/
 /*FONT SIZE P = 17px*/
@@ -159,13 +185,30 @@ h1, h2, h3, h4, h5, h6, p, a {
     .main__icons li {
         padding: 0 20px 0 20px;
     }
-
+    /*About content*/
+    .about__content-h3 {padding: 1em;}
     .about__content-img {
         width: 170px;
     }
 
     .about__content-p {
         font-size: 17px;
+    }
+
+    /*Progression bar*/
+    .progression__content {
+        padding-top: 4em;
+    }
+    .progression__bar {
+        background-color: var(--dark-grey);
+        height: 35px;
+        border-radius: 16px;
+        margin-top: 1em;
+    }
+
+    .progression__bar-html, .progression__bar-css, .progression__bar-js, .progression__bar-php{
+        height: 35px;
+        padding: 8px;
     }
 }
 
@@ -188,6 +231,15 @@ h1, h2, h3, h4, h5, h6, p, a {
 
     .display__content-box {
         width: 400px;
+    }
+    /*Progression bar*/
+    .progression__content {
+        width: 70%;
+         margin: 0 auto;
+    }
+    .progression__content-p {
+        padding: 5px 5px;
+        font-weight: bold;
     }
 }
 
