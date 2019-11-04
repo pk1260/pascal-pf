@@ -87,5 +87,4 @@ if ( is_array( $match ) && is_callable( $match['target'] ) ) {
 } else {
     // Er is geen match dus een 404 pagina
     header( 'location: notfound' );
-    echo '404: Onbekende pagina';
 }

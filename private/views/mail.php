@@ -11,5 +11,5 @@ if (isset($_POST['submit'])) {
     $txt = "You have recieved mail from: " . $name . ".\n\n" . $message;
 
     mail($email_to, $subject, $txt, $headers);
-//    header("Location: contact?mailsend");
+    header('Refresh: 2;' . url('/contact'));
 }
