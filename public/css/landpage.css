@@ -102,6 +102,7 @@ h1, h2, h3, h4, h5, h6, p, a {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    padding-bottom: 1em;
 }
 
 .display__content-preview-img {
@@ -109,7 +110,7 @@ h1, h2, h3, h4, h5, h6, p, a {
 }
 
 .display__content-preview-h2 {
-    padding-top: 20px;
+    padding: 1em;
     font-size: 2em;
     text-align: center;
 }
@@ -163,7 +164,7 @@ h1, h2, h3, h4, h5, h6, p, a {
 .progression__bar-css {width: 85%;}
 .progression__bar-js {width: 60%;}
 .progression__bar-php {width: 65%;}
-.project__content-p {
+.progression__content-p {
     padding-top: 5px;
     font-weight: bold;
 }

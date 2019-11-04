@@ -2,7 +2,7 @@
 require __DIR__ .'/functions.php';
 require __DIR__ . '/../models/displayPreview.php';
 require __DIR__ . '/../models/displayProject.php';
-//require __DIR__ . '/../models/displayPortfolio.php';
+require __DIR__ . '/../models/displayPortfolio.php';
 /**
  * Onderstaande code zorgt ervoordat als we in onze code een controller willen gebruiken bijv:
  *

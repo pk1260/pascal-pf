@@ -88,9 +88,6 @@ input[type=submit] {
     .portfolio__preview-content-h4 {
         font-size: 1em;
     }
-    .portfolio__container {
-        max-width: 350px;
-    }
 }
 
 /*DESKTOP SCREEN*/

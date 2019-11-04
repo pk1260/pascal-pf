@@ -8,7 +8,7 @@
 
 class PortfolioController {
     function portfoliopage(){
-        $portfolio = displayPreview();
+        $portfolio = displayPortfolio();
         include __DIR__ . '/../views/header.php';
         include __DIR__ . '/../views/portfolio.php';
         include __DIR__ . '/../views/footer.php';

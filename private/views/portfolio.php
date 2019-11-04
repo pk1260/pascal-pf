@@ -15,10 +15,10 @@
 
 <div class="searchbar">
     <div class="searchbar__form">
-        <form action="" method="post">
-            <input type="submit" value="Search">
-            <input type="text" name="search" placeholder="search here">
-        </form>
+<!--        <form action="" method="post">-->
+<!--            <input type="submit" value="Search">-->
+<!--            <input type="text" name="search" placeholder="search here">-->
+<!--        </form>-->
     </div>
 </div>
 
