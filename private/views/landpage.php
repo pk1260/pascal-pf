@@ -92,26 +92,26 @@
     <div class="progression__content">
         <p class="progression__content-p">HTML</p>
         <div class="progression__bar">
-            <div class="progression__bar-html">90%</div>
+            <div class="progression__bar-html"></div>
         </div>
         <p class="progression__content-p">CSS</p>
         <div class="progression__bar">
-            <div class="progression__bar-css">85%</div>
+            <div class="progression__bar-css"></div>
         </div>
         <p class="progression__content-p">JS</p>
         <div class="progression__bar">
-            <div class="progression__bar-js">60%</div>
+            <div class="progression__bar-js"></div>
         </div>
         <p class="progression__content-p">PHP</p>
         <div class="progression__bar">
-            <div class="progression__bar-php">65%</div>
+            <div class="progression__bar-php"></div>
         </div>
     </div>
 </div>
 
 <!--Miniture Projects-->
 <div class="display__content">
-    <h2 class="display__content-preview-h2">My Projects</h2>
+    <h2 class="display__content-preview-h2">RECENT UPLOADS</h2>
     <div class="display__content-preview">
         <?php foreach ($preview as $project) { ?>
             <div class="display__content-box">

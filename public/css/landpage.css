@@ -68,10 +68,10 @@ h1, h2, h3, h4, h5, h6, p, a {
 
 /* About Styling */
 .about__content {
-    height: 90vh;
+    height: 100%;
     background-color: var(--main-grey);
     text-align: center;
-    padding: 0px 5%;
+    padding: 3%;
 }
 
 .about__content-h3 {
@@ -230,7 +230,7 @@ h1, h2, h3, h4, h5, h6, p, a {
     }
 
     .display__content-box {
-        width: 400px;
+        width: 300px;
     }
     /*Progression bar*/
     .progression__content {

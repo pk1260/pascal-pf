@@ -17,7 +17,7 @@
 <div class="contact__content-box">
     <div class="contact__content">
         <h2 class="contact__content-h2">Contact me</h2>
-        <form class="contact__content-form" action="mail" method="get">
+        <form class="contact__content-form" action="mail" method="post">
             <input type="text" name="name" placeholder="name">
             <input type="email" name="mail" placeholder="email">
             <input type="text" name="subject" placeholder="subject">
