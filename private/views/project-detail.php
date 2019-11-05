@@ -8,14 +8,13 @@
 ?>
 <div class="project__main">
     <div class="project__header">
-        <h2 class="project__header-h2">Portfolio projects</h2>
+        <h2 class="project__header-h2">Project : <?php echo $project['proj_name']?></h2>
         <div class="icon-scroll"></div>
     </div>
 </div>
 
 <div class="project__content-box">
     <div class="project__content">
-        <h2 class="project__content-h3">Project: <?php echo $project['proj_name']?></h2>
         <div class="project__content-group-1">
             <img src="<?php echo url('/img/' . $project['proj_img']) ?>" alt="" class="project__content-img">
             <div class="project__content-split">
