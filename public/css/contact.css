@@ -12,7 +12,7 @@
 .contact__content-h2 {
     text-transform: uppercase;
     font-size: 1em;
-    padding-bottom: 5%;
+    padding-bottom: 1em;
 }
 
 .contact__content-phone {
@@ -34,7 +34,7 @@
 /*TABLET VIEW*/
 @media screen and (min-width: 570px) {
     .contact__content {
-        padding-top: 15vh;
+        padding-top: 5vh;
     }
     .contact__content-h2 {
         font-size: 30px;
@@ -45,5 +45,14 @@
 @media screen and (min-width: 1000px) {
     .contact__content-h2 {
         font-size: 40px;
+    }
+
+    .contact__content-phone {
+        padding: 2em;
+        width: 30%;
+    }
+
+    .contact__content-mail {
+        padding-bottom: 2em;
     }
 }

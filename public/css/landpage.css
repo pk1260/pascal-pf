@@ -74,7 +74,7 @@ h1, h2, h3, h4, h5, h6, p, a {
     padding: 3%;
 }
 .about__content-me {
-    width: 70%;
+    width: 80%;
     margin: 0 auto;
 }
 .about__content-h3 {
@@ -245,7 +245,7 @@ h1, h2, h3, h4, h5, h6, p, a {
 
     /*Progression bar*/
     .proggression__content-column-left, .proggression__content-column-right {
-        width: 290px;
+        width: 400px;
     }
 }
 
