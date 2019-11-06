@@ -26,7 +26,7 @@
         padding-top: 15vh;
     }
     .contact__content-h2 {
-        font-size: 40px;
+        font-size: 30px;
     }
     .contact__content-form {
         display: grid;
@@ -51,7 +51,7 @@
 /*DESKTOP SCREEN*/
 @media screen and (min-width: 1000px) {
     .contact__content-h2 {
-        font-size: 60px;
+        font-size: 40px;
     }
     .contact__content-form {
         justify-items: center;

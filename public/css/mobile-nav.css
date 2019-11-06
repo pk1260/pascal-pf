@@ -7,23 +7,20 @@
     --main-grey:    #F0F0F0;
     --dark-grey:    #BEBEBE;
 }
+
 /*TEKST SETUP*/
 h1, h2, h3, h4, h5, h6, p, a, li{
     font-family: Roboto, sans-serif;
 }
+
 /*DESKTOP NAVIGATION SECTION*/
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
-/*body {*/
-/*    background: url("../img/fujisan-2560x1440p.jpg") center fixed;*/
-/*    background-size: cover;*/
-/*}*/
 
 body {
-    /*background-color: var(--main-blue);*/
     background: url("../img/fujisan-2560x1440p.jpg") center fixed;
     background-size: cover;
     margin: 0;

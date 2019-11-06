@@ -73,7 +73,10 @@ h1, h2, h3, h4, h5, h6, p, a {
     text-align: center;
     padding: 3%;
 }
-
+.about__content-me {
+    width: 70%;
+    margin: 0 auto;
+}
 .about__content-h3 {
     font-size: 1.8em;
     padding: 10px 0 10px 0;
@@ -92,8 +95,6 @@ h1, h2, h3, h4, h5, h6, p, a {
 
 /*Progression bar */
 .progression__content {
-    width: 90%;
-    margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -190,7 +191,6 @@ h1, h2, h3, h4, h5, h6, p, a {
 }
 
 /*TABLET VIEW*/
-/*FONT SIZE P = 17px*/
 @media screen and (min-width: 570px) {
     .main__header-h2 {
         font-size: 40px;
@@ -218,7 +218,7 @@ h1, h2, h3, h4, h5, h6, p, a {
 
     /*Progression bar*/
     .proggression__content-column-left, .proggression__content-column-right {
-        width: 250px;
+        width: 220px;
     }
 }
 
@@ -245,7 +245,7 @@ h1, h2, h3, h4, h5, h6, p, a {
 
     /*Progression bar*/
     .proggression__content-column-left, .proggression__content-column-right {
-        width: 350px;
+        width: 290px;
     }
 }
 

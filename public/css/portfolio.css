@@ -94,7 +94,7 @@ input[type=submit] {
 }
 
 /*DESKTOP SCREEN*/
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 1900px) {
     .portfolio__header-h2 {
         font-size: 60px;
     }

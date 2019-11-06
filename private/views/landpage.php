@@ -16,7 +16,7 @@
             <li>
                 <a href="https://www.linkedin.com/in/pascal-kuiper-bb9240173/" class="main__icons-hover"
                    target="_blank">
-                    <svg class="svg" id="Capa_1" data-name="Capa 1" xmlns="http://www.w3.org/2000/svg"
+                    <svg class="svg" data-name="Capa 1" xmlns="http://www.w3.org/2000/svg"
                          viewBox="0 0 438.55 622.67">
                         <defs>
                             <style>.cls-1 {
@@ -35,7 +35,7 @@
             </li>
             <li>
                 <a href="https://github.com/pk1260" class="main__icons-hover" target="_blank">
-                    <svg class="svg" id="Capa_1" data-name="Capa 1" xmlns="http://www.w3.org/2000/svg"
+                    <svg class="svg" data-name="Capa 1" xmlns="http://www.w3.org/2000/svg"
                          viewBox="0 0 438.55 622.67">
                         <defs>
                             <style>.cls-1 {
@@ -59,7 +59,7 @@
             </li>
             <li>
                 <a href="img/Curriculum-vitae-PascalKuiper-ENG.pdf" download class="main__icons-hover" target="_blank">
-                    <svg class="svg" id="Capa_1" data-name="Capa 1" xmlns="http://www.w3.org/2000/svg"
+                    <svg class="svg" data-name="Capa 1" xmlns="http://www.w3.org/2000/svg"
                          viewBox="0 0 438.55 622.67">
                         <defs>
                             <style>.cls-1 {
@@ -82,11 +82,12 @@
 
 <!--About me-->
 <div class="about__content">
+    <div class="about__content-me">
     <h3 class="about__content-h3">About me</h3>
     <img class="about__content-img" src="img/pascal-k.jpg" alt="Pascal Kuiper">
     <p class="about__content-p">
         I am Pascal Kuiper, A media developer, certified All-round DTP'r & Freelance Designer.  Currently, I am enrolled at the MediaCollege Amsterdam as Mediadeveloper Secondary vocational education Level 4.
-        I enjoy creating websites using HTML, CSS, PHP, and JS. I am looking for an internship where I can learn more about back-end web development, by using the more back-end oriented programming languages and frameworks such as PHP, Composer, Laravel, Symfony and NodeJS.
+        I enjoy creating websites using HTML, CSS, PHP, and JS. I am looking for an internship where I can learn more about back-end web development, by using more back-end oriented programming languages and frameworks such as PHP, Composer, Laravel, Symfony and NodeJS.
     </p>
     <div class="progression__content">
         <div class="proggression__content-column-left">
@@ -136,6 +137,7 @@
             </div>
         </div>
     </div>
+    </div>
 </div>
 
 <!--Miniture Projects-->
@@ -151,3 +153,4 @@
             </div>
         <?php } ?>
     </div>
+</div>
