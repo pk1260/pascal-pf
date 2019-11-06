@@ -1,5 +1,5 @@
 .contact__content-box {
-    height: 100vh;
+    height: 100%;
     background: var(--main-white);
 }
 
@@ -7,18 +7,29 @@
     width: 90%;
     margin: 0 auto;
     text-align: center;
-    padding-top: 10vh;
+    padding: 2em 0 2em;
 }
 .contact__content-h2 {
     text-transform: uppercase;
-    padding: 1em 1em;
+    font-size: 1em;
+    padding-bottom: 5%;
 }
-.contact__content-form input, textarea{
-    width: 240px;
+
+.contact__content-phone {
+    padding: .1em;
+    border-bottom: var(--dark-grey) 1px solid;
+    width: 70%;
+    margin: 0 auto;
 }
-.contact__content-form textarea {
-    height: 140px;
+
+.contact__content-mail {
+    padding: .1em;
 }
+
+.contact__content-icon {
+    margin: .5em;
+}
+
 
 /*TABLET VIEW*/
 @media screen and (min-width: 570px) {
@@ -28,32 +39,11 @@
     .contact__content-h2 {
         font-size: 30px;
     }
-    .contact__content-form {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-
-    }
-    .contact__content-form input[type=text], select, input[type=email], select, textarea{
-        grid-column: 2/3;
-    }
-    .contact__content-form input[type=submit] {
-        grid-column: 2/3;
-    }
-    .contact__content-form input, textarea{
-        width: 360px;
-        height: 60px;
-    }
-    .contact__content-form textarea {
-        height: 290px;
-    }
 }
 
 /*DESKTOP SCREEN*/
 @media screen and (min-width: 1000px) {
     .contact__content-h2 {
         font-size: 40px;
-    }
-    .contact__content-form {
-        justify-items: center;
     }
 }
