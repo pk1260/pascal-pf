@@ -90,6 +90,53 @@ h1, h2, h3, h4, h5, h6, p, a {
     font-size: 12px;
 }
 
+/*Progression bar */
+.progression__content {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.proggression__content-column-left, .proggression__content-column-right {
+    width: 240px;
+    border-radius: 5px;
+    background: var(--main-white);
+    padding: 10px;
+    margin: 20px;
+}
+.progression__bar {
+    background-color: var(--dark-grey);
+    height: 20px;
+    border-radius: 16px;
+    margin: 3px;
+}
+.progression__bar-blue {
+    background-color: var(--main-blue);
+    height: 20px;
+    border-radius: 16px;
+}
+.html { width: 90%; }
+.css { width: 85%; }
+.php { width: 65%; }
+.js { width: 60%; }
+.java { width: 50%; }
+.team { width: 95%; }
+.social { width: 90%; }
+.create { width: 85%; }
+.motiv { width: 95%; }
+.indep { width: 70%; }
+
+
+.progression__content-p {
+    font-weight: 400;
+}
+
+.progression__content-h3 {
+    padding: 5px;
+}
+
 /* Project Mini Display Styling */
 .display__content {
     background-color: var(--main-white);
@@ -142,33 +189,6 @@ h1, h2, h3, h4, h5, h6, p, a {
     margin: 10px;
 }
 
-/*Progression bar */
-.progression__bar {
-    background-color: var(--dark-grey);
-    height: 20px;
-    border-radius: 16px
-}
-
-.progression__bar-html, .progression__bar-css, .progression__bar-js, .progression__bar-php{
-    background-color: var(--main-blue);
-    height: 20px;
-    padding-left: 10px;
-    border-radius: 16px;
-    text-align: left;
-    margin-top: 5px;
-    font-family: Roboto;
-    text-transform: uppercase;
-    color: var(--main-white);
-}
-.progression__bar-html {width: 90%;}
-.progression__bar-css {width: 85%;}
-.progression__bar-js {width: 60%;}
-.progression__bar-php {width: 65%;}
-.progression__content-p {
-    padding-top: 5px;
-    font-weight: bold;
-}
-
 /*TABLET VIEW*/
 /*FONT SIZE P = 17px*/
 @media screen and (min-width: 570px) {
@@ -197,19 +217,8 @@ h1, h2, h3, h4, h5, h6, p, a {
     }
 
     /*Progression bar*/
-    .progression__content {
-        padding-top: 4em;
-    }
-    .progression__bar {
-        background-color: var(--dark-grey);
-        height: 35px;
-        border-radius: 16px;
-        margin-top: 1em;
-    }
-
-    .progression__bar-html, .progression__bar-css, .progression__bar-js, .progression__bar-php{
-        height: 35px;
-        padding: 8px;
+    .proggression__content-column-left, .proggression__content-column-right {
+        width: 250px;
     }
 }
 
@@ -233,14 +242,10 @@ h1, h2, h3, h4, h5, h6, p, a {
     .display__content-box {
         width: 300px;
     }
+
     /*Progression bar*/
-    .progression__content {
-        width: 70%;
-         margin: 0 auto;
-    }
-    .progression__content-p {
-        padding: 5px 5px;
-        font-weight: bold;
+    .proggression__content-column-left, .proggression__content-column-right {
+        width: 350px;
     }
 }
 

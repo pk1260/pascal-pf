@@ -85,26 +85,55 @@
     <h3 class="about__content-h3">About me</h3>
     <img class="about__content-img" src="img/pascal-k.jpg" alt="Pascal Kuiper">
     <p class="about__content-p">
-        I am Pascal Kuiper, Media Developer, certified All-round DTP'r & Freelance Designer.<br>
-        Currently, I am enrolled at the MediaCollege Amsterdam as Mediadeveloper Secondary vocational education Level 4.<br>
-        I enjoy creating websites using HTML, CSS, PHP, and JS.
+        I am Pascal Kuiper, A media developer, certified All-round DTP'r & Freelance Designer.  Currently, I am enrolled at the MediaCollege Amsterdam as Mediadeveloper Secondary vocational education Level 4.
+        I enjoy creating websites using HTML, CSS, PHP, and JS. I am looking for an internship where I can learn more about back-end web development, by using the more back-end oriented programming languages and frameworks such as PHP, Composer, Laravel, Symfony and NodeJS.
     </p>
     <div class="progression__content">
-        <p class="progression__content-p">HTML</p>
-        <div class="progression__bar">
-            <div class="progression__bar-html"></div>
+        <div class="proggression__content-column-left">
+            <h3 class="progression__content-h3">LANGUAGES</h3>
+            <p class="progression__content-p">HTML</p>
+            <div class="progression__bar">
+                <div class="progression__bar-blue html"></div>
+            </div>
+            <p class="progression__content-p">CSS</p>
+            <div class="progression__bar">
+                <div class="progression__bar-blue css"></div>
+            </div>
+            <p class="progression__content-p">PHP</p>
+            <div class="progression__bar">
+                <div class="progression__bar-blue php"></div>
+            </div>
+            <p class="progression__content-p">JS</p>
+            <div class="progression__bar">
+                <div class="progression__bar-blue js"></div>
+            </div>
+            <p class="progression__content-p">JAVA</p>
+            <div class="progression__bar">
+                <div class="progression__bar-blue java"></div>
+            </div>
         </div>
-        <p class="progression__content-p">CSS</p>
-        <div class="progression__bar">
-            <div class="progression__bar-css"></div>
-        </div>
-        <p class="progression__content-p">JS</p>
-        <div class="progression__bar">
-            <div class="progression__bar-js"></div>
-        </div>
-        <p class="progression__content-p">PHP</p>
-        <div class="progression__bar">
-            <div class="progression__bar-php"></div>
+        <div class="proggression__content-column-right">
+            <h3 class="progression__content-h3">SKILLS</h3>
+            <p class="progression__content-p">TEAMWORK</p>
+            <div class="progression__bar">
+                <div class="progression__bar-blue team"></div>
+            </div>
+            <p class="progression__content-p">SOCIAL</p>
+            <div class="progression__bar">
+                <div class="progression__bar-blue team"></div>
+            </div>
+            <p class="progression__content-p">MOTIVATION</p>
+            <div class="progression__bar">
+                <div class="progression__bar-blue motiv"></div>
+            </div>
+            <p class="progression__content-p">CREATIVE</p>
+            <div class="progression__bar">
+                <div class="progression__bar-blue create"></div>
+            </div>
+            <p class="progression__content-p">INDEPENDENT</p>
+            <div class="progression__bar">
+                <div class="progression__bar-blue indep"></div>
+            </div>
         </div>
     </div>
 </div>

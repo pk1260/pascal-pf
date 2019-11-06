@@ -16,7 +16,7 @@
 <div class="project__content-box">
     <div class="project__content">
         <div class="project__content-group-1">
-            <img src="<?php echo url('/img/' . $project['proj_img']) ?>" alt="" class="project__content-img">
+            <img src="<?php echo url('/img/' . $project['proj_img']) ?>" alt="<?php echo url('/img/' . $project['proj_name']) ?>" class="project__content-img">
             <div class="project__content-split">
                 <a href="<?php echo $project['proj_prev']?>" target="_blank" class="project__content-button" id="button-1">LIVE PREVIEW</a>
                 <a href="<?php echo $project['proj_git']?>" target="_blank" class="project__content-button" id="button-2">GITHUB</a>
